@@ -1,0 +1,24 @@
+Projetos
+
+Crm.Customizacao
+Objetivo:
+ - Criação de serviços customizados de API
+ - Criação de paginas para uso inline em IFrame
+ 
+ 
+ Crm.PersonalizacaoUI
+ Objetivo:
+  - Customização de scripts e recursos web
+ 
+Crm.Portal
+  Objetivo:
+   - Desenvolvimento de portal integrado
+
+ Conhecimento
+ - Mudança de porta do IIS Express
+ https://truncatedcodr.wordpress.com/2011/09/30/how-to-change-iis-express-ssl-port-without-webmatrix/
+
+ -Comando para adicionar certificado em uma porta para o IIS Express
+ netsh http add sslcert ipport=0.0.0.0:44300 certhash=fb9712475d4cb46ce8f4fbaf8cf7e487d3644963 appid={214124cd-d05b-4309-9af9-9caa44b2b74a}
+ 
+ - Erro : Audience Validatior Erro : Ocorre quando a url no config diferente em algo da configurada no ADFS.

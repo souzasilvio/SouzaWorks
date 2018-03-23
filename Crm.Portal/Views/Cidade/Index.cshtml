@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Crm.Portal.Models.Cidade>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeEstado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomePais)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (Crm.Portal.Models.Cidade item in ViewBag.Cidade) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeEstado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomePais)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

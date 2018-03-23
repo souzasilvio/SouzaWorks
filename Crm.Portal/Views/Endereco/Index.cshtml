@@ -1,0 +1,24 @@
+﻿﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using (Html.BeginForm("Index", "Endereco", FormMethod.Post,
+new
+{
+  id = "CountryStateFormID",
+  data_stateListAction = @Url.Action("StateList"),
+  data_countryListAction = @Url.Action("CountryList")
+ }))
+{
+    <fieldset>
+        <legend>Country/State</legend>
+        <div class="editor-label">
+            <label for="Countries">Countries</label>
+        </div>
+        <select id="CountriesID" name="Countries"></select>
+        <div id="StatesDivID">
+            <label for="States">States</label>
+            <select id="StatesID" name="States"></select>
+        </div>
+    </fieldset>
+        <input type="submit" value="Submit" id="SubmitID" />
+}

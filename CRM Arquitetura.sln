@@ -1,0 +1,177 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Model", "Crm.Model\Crm.Model.csproj", "{B205DA00-F346-4170-B0B8-8DCBEB4ADC93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Dominio", "Crm.Dominio\Crm.Dominio.csproj", "{3C45BACF-DE03-490B-9CBD-42B65D3A1FA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plataforma", "Plataforma", "{D33097B9-2094-4C3B-80A0-FEEB2A0D1DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Plugins", "Crm.Plugins\Crm.Plugins.csproj", "{73DD9840-DD78-4979-A973-108AE4A424C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.WorkFlows", "Crm.WorkFlows\Crm.WorkFlows.csproj", "{AC8252B4-884C-4D4B-A416-A55769245BAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E0E59FF0-F75A-4644-B9F8-BF6CCA17161A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2998BD7F-C393-4159-9ECC-BDFFB87E26DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.UIExtension", "Crm.Personalizacao\Crm.UIExtension.csproj", "{1DD2270B-FBBF-4F42-B3E1-980C04706922}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{69280BF4-BD5A-4251-AF2B-DB47FDC7D78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Console.Carga", "CRM.Console.Carga\CRM.Console.Carga.csproj", "{2453AAE1-B8E6-465F-838D-BBE911CE795B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentos", "Documentos", "{A5BBCDFF-616B-4726-BA55-14CE6AB4A2B2}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\silvio\Downloads\CRMArchitecture_1_0_0_0.zip = C:\Users\silvio\Downloads\CRMArchitecture_1_0_0_0.zip
+		Documentacao.txt = Documentacao.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Repositorio", "Crm.Repositorio\Crm.Repositorio.csproj", "{95161515-1EC6-497E-9728-CA3756DA6A59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.WebExtension", "Crm.WebExtension\Crm.WebExtension.csproj", "{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}"
+EndProject
+Global
+	GlobalSection(CrmCodeGeneration) = preSolution
+		UseSSL = True
+		UseIFD = False
+		UseOnline = True
+		UseOffice365 = True
+		ServerName = crm2.dynamics.com
+		ServerPort = 
+		HomeRealm = 
+		Domain = 
+		WindowsAuthorization = False
+		Organization = mrv
+		IncludeEntities = account,contact,lead,opportunity,systemuser,team,teammembership,transactioncurrency,uom,uomschedule
+		IncludeNonStandard = False
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B205DA00-F346-4170-B0B8-8DCBEB4ADC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B205DA00-F346-4170-B0B8-8DCBEB4ADC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B205DA00-F346-4170-B0B8-8DCBEB4ADC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B205DA00-F346-4170-B0B8-8DCBEB4ADC93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C45BACF-DE03-490B-9CBD-42B65D3A1FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C45BACF-DE03-490B-9CBD-42B65D3A1FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C45BACF-DE03-490B-9CBD-42B65D3A1FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C45BACF-DE03-490B-9CBD-42B65D3A1FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73DD9840-DD78-4979-A973-108AE4A424C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DD9840-DD78-4979-A973-108AE4A424C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DD9840-DD78-4979-A973-108AE4A424C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DD9840-DD78-4979-A973-108AE4A424C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC8252B4-884C-4D4B-A416-A55769245BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8252B4-884C-4D4B-A416-A55769245BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8252B4-884C-4D4B-A416-A55769245BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8252B4-884C-4D4B-A416-A55769245BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD2270B-FBBF-4F42-B3E1-980C04706922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD2270B-FBBF-4F42-B3E1-980C04706922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD2270B-FBBF-4F42-B3E1-980C04706922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2453AAE1-B8E6-465F-838D-BBE911CE795B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2453AAE1-B8E6-465F-838D-BBE911CE795B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2453AAE1-B8E6-465F-838D-BBE911CE795B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2453AAE1-B8E6-465F-838D-BBE911CE795B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95161515-1EC6-497E-9728-CA3756DA6A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95161515-1EC6-497E-9728-CA3756DA6A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95161515-1EC6-497E-9728-CA3756DA6A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95161515-1EC6-497E-9728-CA3756DA6A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B205DA00-F346-4170-B0B8-8DCBEB4ADC93} = {2998BD7F-C393-4159-9ECC-BDFFB87E26DD}
+		{3C45BACF-DE03-490B-9CBD-42B65D3A1FA0} = {2998BD7F-C393-4159-9ECC-BDFFB87E26DD}
+		{73DD9840-DD78-4979-A973-108AE4A424C4} = {D33097B9-2094-4C3B-80A0-FEEB2A0D1DD7}
+		{AC8252B4-884C-4D4B-A416-A55769245BAB} = {D33097B9-2094-4C3B-80A0-FEEB2A0D1DD7}
+		{1DD2270B-FBBF-4F42-B3E1-980C04706922} = {E0E59FF0-F75A-4644-B9F8-BF6CCA17161A}
+		{2453AAE1-B8E6-465F-838D-BBE911CE795B} = {69280BF4-BD5A-4251-AF2B-DB47FDC7D78A}
+		{95161515-1EC6-497E-9728-CA3756DA6A59} = {2998BD7F-C393-4159-9ECC-BDFFB87E26DD}
+		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1} = {E0E59FF0-F75A-4644-B9F8-BF6CCA17161A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EB21E03-F2C0-4A72-BACC-D6DEDF3C5517}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bhz-tfs-app3:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CRM.Console.Carga\\CRM.Console.Carga.csproj
+		SccProjectTopLevelParentUniqueName1 = CRM\u0020Arquitetura.sln
+		SccProjectName1 = CRM.Console.Carga
+		SccLocalPath1 = CRM.Console.Carga
+		SccProjectUniqueName2 = Crm.Dominio\\Crm.Dominio.csproj
+		SccProjectTopLevelParentUniqueName2 = CRM\u0020Arquitetura.sln
+		SccProjectName2 = Crm.Dominio
+		SccLocalPath2 = Crm.Dominio
+		SccProjectUniqueName3 = Crm.Model\\Crm.Model.csproj
+		SccProjectTopLevelParentUniqueName3 = CRM\u0020Arquitetura.sln
+		SccProjectName3 = Crm.Model
+		SccLocalPath3 = Crm.Model
+		SccProjectUniqueName4 = Crm.Personalizacao\\Crm.PersonalizacaoUI.csproj
+		SccProjectTopLevelParentUniqueName4 = CRM\u0020Arquitetura.sln
+		SccProjectName4 = Crm.Personalizacao
+		SccLocalPath4 = Crm.Personalizacao
+		SccProjectUniqueName5 = Crm.Plugins\\Crm.Plugins.csproj
+		SccProjectTopLevelParentUniqueName5 = CRM\u0020Arquitetura.sln
+		SccProjectName5 = Crm.Plugins
+		SccLocalPath5 = Crm.Plugins
+		SccProjectUniqueName6 = Crm.Portal\\Crm.Portal.csproj
+		SccProjectTopLevelParentUniqueName6 = CRM\u0020Arquitetura.sln
+		SccProjectName6 = Crm.Portal
+		SccLocalPath6 = Crm.Portal
+		SccProjectUniqueName7 = Crm.WebAPI.Test\\Crm.WebAPI.Test.csproj
+		SccProjectTopLevelParentUniqueName7 = CRM\u0020Arquitetura.sln
+		SccProjectName7 = Crm.WebAPI.Test
+		SccLocalPath7 = Crm.WebAPI.Test
+		SccProjectUniqueName8 = Crm.WorkFlows\\Crm.WorkFlows.csproj
+		SccProjectTopLevelParentUniqueName8 = CRM\u0020Arquitetura.sln
+		SccProjectName8 = Crm.WorkFlows
+		SccLocalPath8 = Crm.WorkFlows
+		SccProjectUniqueName9 = DominioTest\\DominioTest.csproj
+		SccProjectTopLevelParentUniqueName9 = CRM\u0020Arquitetura.sln
+		SccProjectName9 = DominioTest
+		SccLocalPath9 = DominioTest
+		SccProjectUniqueName10 = JavaScriptTest\\JavaScriptTest.csproj
+		SccProjectTopLevelParentUniqueName10 = CRM\u0020Arquitetura.sln
+		SccProjectName10 = JavaScriptTest
+		SccLocalPath10 = JavaScriptTest
+		SccProjectUniqueName11 = ConsoleApp\\ConsoleApp.csproj
+		SccProjectTopLevelParentUniqueName11 = CRM\u0020Arquitetura.sln
+		SccProjectName11 = ConsoleApp
+		SccLocalPath11 = ConsoleApp
+		SccProjectUniqueName12 = FilterService\\FilterService.csproj
+		SccProjectTopLevelParentUniqueName12 = CRM\u0020Arquitetura.sln
+		SccProjectName12 = FilterService
+		SccLocalPath12 = FilterService
+		SccProjectUniqueName13 = Boleto.Net\\Boleto.Net.csproj
+		SccProjectTopLevelParentUniqueName13 = CRM\u0020Arquitetura.sln
+		SccProjectName13 = Boleto.Net
+		SccLocalPath13 = Boleto.Net
+		SccProjectUniqueName14 = Crm.Repositorio\\Crm.Repositorio.csproj
+		SccProjectTopLevelParentUniqueName14 = CRM\u0020Arquitetura.sln
+		SccProjectName14 = Crm.Repositorio
+		SccLocalPath14 = Crm.Repositorio
+		SccProjectUniqueName15 = ConsoleApp2\\ConsoleApp2.csproj
+		SccProjectTopLevelParentUniqueName15 = CRM\u0020Arquitetura.sln
+		SccProjectName15 = ConsoleApp2
+		SccLocalPath15 = ConsoleApp2
+		SccProjectUniqueName16 = CRM365.Customizacao\\CRM365.Customizacao.csproj
+		SccProjectTopLevelParentUniqueName16 = CRM\u0020Arquitetura.sln
+		SccProjectName16 = CRM365.Customizacao
+		SccLocalPath16 = CRM365.Customizacao
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+EndGlobal

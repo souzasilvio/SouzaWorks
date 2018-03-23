@@ -1,0 +1,55 @@
+﻿@model Crm.Model.Contact
+@{
+    ViewBag.Title = "Novo Contato";
+}
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td width="150px">Nome</td>
+                            <td>
+                                @Html.HiddenFor(m => m.Id)
+                                @Html.EditorFor(m => m.FirstName)
+                                @Html.ValidationMessageFor(m => m.FirstName)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sobre Nome</td>
+                            <td>
+                                @Html.EditorFor(m => m.LastName)
+                                @Html.ValidationMessageFor(m => m.LastName)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="150px">E-Mail</td>
+                            <td>
+                                @Html.EditorFor(m => m.EMailAddress1)
+                                @Html.ValidationMessageFor(m => m.EMailAddress1)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Telefone</td>
+                            <td>
+                                @Html.EditorFor(m => m.Telephone1)
+                                @Html.ValidationMessageFor(m => m.Telephone1)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Save" />
+                                <br />
+                            </td>
+                            @Html.ActionLink("Voltar", "Index")
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </div>
+        }

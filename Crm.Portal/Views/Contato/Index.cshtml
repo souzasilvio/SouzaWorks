@@ -1,0 +1,80 @@
+﻿@model Crm.Model.Contact
+@{
+    ViewBag.Title = "Contatos";
+}
+<table>
+    <tr>      
+    </tr>
+    <tr>
+        @using (Html.BeginForm())
+        {
+            <br/>
+            <p>
+                Nome: @Html.TextBox("nomePesquisa") 
+                <input type="submit" value="Buscar" />
+                <a href="~/Contato/AddNew/">Novo</a>
+            </p>
+        }
+    </tr>
+    <tr>
+        <td>
+            <table border="0" cellpadding="4" cellspacing="1" bgcolor="#D8D8D8" class="main_txt">
+                <tr>
+                    <td width="100" align="left" class="header_bg">
+                        <a href="">Nome</a>
+                    </td>
+                    <td width="80" align="left">
+                        <a href="">Sobrenome</a>
+                    </td>
+                    <td width="120" align="left">
+                        <a href="">
+                            E-Mail
+                        </a>
+                    </td>
+                    <td width="120" align="left">
+                        <a href="">
+                            Telefone
+                        </a>
+                    </td>
+                    
+                    <td width="80" align="center" class="header_bg"></td>
+                    <td width="80" align="center" class="header_bg"></td>
+                </tr>
+
+                @{
+                    string COLOR1 = "#ffffff";
+                    string COLOR2 = "#f1f1f1";
+                    string bgcolor = "#ffffff";
+                }
+
+                @foreach (Crm.Model.Contact x in ViewBag.Contatos)
+                {
+                    bgcolor = bgcolor == COLOR1 ? COLOR2 : COLOR1;
+
+                    <tr bgcolor="@bgcolor">
+
+                        <td>
+                            @x.FirstName
+                        </td>
+                        <td>
+                            @x.LastName
+                        </td>
+                        <td>
+                            @x.EMailAddress1
+                        </td>
+                        <td>
+                            @x.Telephone1
+                        </td>
+                       
+                        <td>
+                            <a href="~/Contato/AddNew/@x.Id">Editar</a>                            
+                        </td>
+                        <td>                            
+                            <a href="~/Contato/Delete/@x.Id">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </td>
+    </tr>
+</table>
