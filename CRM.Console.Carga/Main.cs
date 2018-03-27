@@ -15,6 +15,7 @@ namespace CRM.Console.Carga
         {
             try
             {
+                CreateTems();
                 CreateContacts();
                 UpdateContacts();
                 DeleteContacts();
@@ -26,7 +27,33 @@ namespace CRM.Console.Carga
             }
         }
 
-       
+        private static void CreateTems()
+        {
+            try
+            {
+                //Create Team with a specific guid.
+                //This guid could be used later as constant in project to perform query in teammembership
+
+                //Search for root businesunit to use for create a team
+                var lista = SalesDomain.Instancia.Listar(Crm.Model.BusinessUnit.EntityLogicalName, "name", "mrv", false, "name");
+                if (lista.Entities.Count > 0)
+                {
+                    var team = new Crm.Model.Team();
+                    team.Id = new Guid("00000000-0000-0000-0000-000000000001");
+                    team.Name = "Equipe 1";
+                    team.BusinessUnitId = lista[0].ToEntityReference();
+                    Guid id = SalesDomain.Instancia.Create(team);
+                }
+            }
+            catch (Exception ex)
+            {
+                //Let error be if team alread exists
+                System.Console.WriteLine(ex.Message);
+
+            }
+        }
+
+
 
         //Create Sample Contact
         private static void CreateContacts()

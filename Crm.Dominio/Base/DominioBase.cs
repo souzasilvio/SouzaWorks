@@ -64,7 +64,7 @@ namespace Crm.Dominio.Base
         /// <returns></returns>
         public Entity ObterPorFiltro(string nomeEntidade, string campoFiltro,  object valorFiltro, params string[] atributos)
         {
-            var colecao = Listar(nomeEntidade, campoFiltro, valorFiltro, atributos);
+            var colecao = Listar(nomeEntidade, campoFiltro, valorFiltro, true, atributos);
             if (colecao.Entities.Count > 0)
                 return colecao[0];
             else
@@ -121,13 +121,16 @@ namespace Crm.Dominio.Base
         /// <param name="valorFiltro">valor filtro ou null para nao filtrar</param>
         /// <param name="atributos">campos de retorno</param>
         /// <returns></returns>
-        public EntityCollection Listar(string nomeEntidade, string campoFiltro, object valorFiltro, params string[] atributos)
+        public EntityCollection Listar(string nomeEntidade, string campoFiltro, object valorFiltro, bool filtraState= true, params string[] atributos)
         {
             var query = new QueryExpression(nomeEntidade);
             query.ColumnSet.AddColumns(atributos);
             if (!string.IsNullOrEmpty(campoFiltro) && valorFiltro != null)
                 query.Criteria.AddCondition(campoFiltro, ConditionOperator.Equal, valorFiltro);
-            query.Criteria.AddCondition("statecode", ConditionOperator.Equal, Model.Constantes.State_Active);
+            if (filtraState)
+            {
+                query.Criteria.AddCondition("statecode", ConditionOperator.Equal, Model.Constantes.State_Active);
+            }
             return RetrieveMultiple(query);
         }
 
