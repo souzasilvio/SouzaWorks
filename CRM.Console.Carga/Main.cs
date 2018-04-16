@@ -19,7 +19,6 @@ namespace CRM.Console.Carga
                 CreateContacts();
                 UpdateContacts();
                 DeleteContacts();
-
             }
             catch (Exception ex)
             {
@@ -27,6 +26,7 @@ namespace CRM.Console.Carga
             }
         }
 
+     
         private static void CreateTems()
         {
             try

@@ -1,8 +1,8 @@
-﻿using Crm.Model;
-using Microsoft.Xrm.Sdk;
+﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using System;
 using Microsoft.Xrm.Sdk.Messages;
+using Crm.Model;
 
 namespace Crm.Repositorio
 {
@@ -75,11 +75,7 @@ namespace Crm.Repositorio
             return RetrieveMultiple(query);
         }
 
-        public EntityCollection RetrieveMultiple(QueryExpression query)
-        {
-            return Contexto.Proxy.RetrieveMultiple(query);
-        }
-
+        
         //public virtual EntityType ObterPorFiltro(string atributoFiltro, object valorFiltro, params string[] atributos)
         //{
         //    var colecao = ListarPorFiltro(NomeLogico, atributoFiltro, valorFiltro, atributos);

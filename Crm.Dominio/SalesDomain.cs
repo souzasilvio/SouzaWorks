@@ -1,7 +1,9 @@
 ﻿using System;
-using Crm.Model;
 using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Client;
+using System.Linq;
+using Crm.Model;
 
 namespace Crm.Dominio
 {
@@ -31,7 +33,7 @@ namespace Crm.Dominio
 
                 return _instance;
             }
-        }
+        }    
 
         public Endereco GetAddress(string zipcode)
         {
@@ -48,6 +50,7 @@ namespace Crm.Dominio
 
         public EntityCollection GetContactsByLastName(string lastLame, params string[] columns)
         {
+            
             var query = new QueryExpression(Contact.EntityLogicalName);
             query.ColumnSet.AddColumns(columns);
             query.Criteria.AddCondition("lastname", ConditionOperator.BeginsWith, lastLame);
