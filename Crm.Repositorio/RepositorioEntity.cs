@@ -28,7 +28,9 @@ namespace Crm.Repositorio
                     lock (syncRoot)
                     {
                         if (_instance == null)
+                        {
                             _instance = new RepositorioEntity();
+                        }
                     }
                 }
 

@@ -27,13 +27,16 @@ namespace Crm.Dominio
                     lock (syncRoot)
                     {
                         if (_instance == null)
+                        {
                             _instance = new SalesDomain();
+                        }
                     }
                 }
 
                 return _instance;
             }
-        }    
+        }
+        #endregion
 
         public Endereco GetAddress(string zipcode)
         {
@@ -50,13 +53,8 @@ namespace Crm.Dominio
 
         public EntityCollection GetContactsByLastName(string lastLame, params string[] columns)
         {
-            
-            var query = new QueryExpression(Contact.EntityLogicalName);
-            query.ColumnSet.AddColumns(columns);
-            query.Criteria.AddCondition("lastname", ConditionOperator.BeginsWith, lastLame);
-            return RetrieveMultiple(query);
+            return ListarPorFiltro(Contact.EntityLogicalName, "lastname", columns);
         }
-        #endregion
 
     }
 }

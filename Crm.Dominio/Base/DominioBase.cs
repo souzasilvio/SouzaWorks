@@ -258,6 +258,11 @@ namespace Crm.Dominio.Base
             }
         }
 
+        public EntityCollection ListarPorFiltro(string entidade, string atributoFiltro, object valorFiltro, params string[] atributos)
+        {
+            return Repositorio.RepositorioEntity.Instancia.ListarPorFiltro(entidade, atributoFiltro, valorFiltro, atributoFiltro);
+        }
+
 
 
     }
