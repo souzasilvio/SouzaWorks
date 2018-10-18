@@ -15,10 +15,14 @@ namespace CRM.Console.Carga
         {
             try
             {
-                CreateTems();
-                CreateContacts();
-                UpdateContacts();
-                DeleteContacts();
+
+
+                var user = new Entity("systemuser", new Guid("F8D8F6D7-0785-E811-A962-000D3AC09E71"));
+                SalesDomain.Instancia.Atualizar(user);
+                //CreateTems();
+                //CreateContacts();
+                //UpdateContacts();
+                //DeleteContacts();
             }
             catch (Exception ex)
             {
@@ -26,7 +30,8 @@ namespace CRM.Console.Carga
             }
         }
 
-     
+
+       
         private static void CreateTems()
         {
             try

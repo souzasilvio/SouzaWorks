@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Crm.UIExtension</RootNamespace>
     <AssemblyName>Crm.UIExtension</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort>44383</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
@@ -67,6 +67,11 @@
     <Content Include="Scripts\Entities\Account.js" />
     <Content Include="Scripts\Entities\FormTest.js" />
     <Content Include="Scripts\Entities\Tempalate.js" />
+    <Content Include="Scripts\WebResource\angular.min.js" />
+    <Content Include="Scripts\WebResource\attributes.html" />
+    <Content Include="Scripts\WebResource\packt.app.js" />
+    <Content Include="Scripts\WebResource\packt.controller.js" />
+    <Content Include="Scripts\WebResource\packt.services.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -82,6 +87,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

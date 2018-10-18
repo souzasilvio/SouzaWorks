@@ -4,6 +4,7 @@ using System.ServiceModel.Description;
 using System.Configuration;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Tooling.Connector;
+using System.Net;
 
 namespace Crm.Repositorio
 {
@@ -24,12 +25,7 @@ namespace Crm.Repositorio
                 {
                     lock (syncRoot)
                     {
-                        var conn = new CrmServiceClient(ConfigurationManager.AppSettings["Username"],
-                        CrmServiceClient.MakeSecureString(ConfigurationManager.AppSettings["Password"]),
-                       ConfigurationManager.AppSettings["Region"], ConfigurationManager.AppSettings["Orgname"],
-                        useUniqueInstance: true,
-                       useSsl: true, isOffice365: true);
-
+                        var conn = new CrmServiceClient(ConfigurationManager.ConnectionStrings["Crm365"].ConnectionString);
                         if (!conn.IsReady)
                         {
                             throw new ApplicationException(conn.LastCrmError);
