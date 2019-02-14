@@ -113,30 +113,6 @@
     <Compile Include="Resultado.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\AntiXSSLibrary.dll" />
-    <Content Include="bin\Debug\Crm.Model.dll" />
-    <Content Include="bin\Debug\Crm.Model.pdb" />
-    <Content Include="bin\Debug\crmsvcutil.exe" />
-    <Content Include="bin\Debug\Microsoft.Crm.Sdk.Proxy.dll" />
-    <Content Include="bin\Debug\Microsoft.IdentityModel.dll" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Client.CodeGeneration.dll" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Client.dll" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Portal.dll" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Portal.Files.dll" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll" />
-    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.dll" />
-    <Content Include="bin\Release\AntiXSSLibrary.dll" />
-    <Content Include="bin\Release\Crm.Model.dll" />
-    <Content Include="bin\Release\Crm.Model.pdb" />
-    <Content Include="bin\Release\crmsvcutil.exe" />
-    <Content Include="bin\Release\Microsoft.Crm.Sdk.Proxy.dll" />
-    <Content Include="bin\Release\Microsoft.IdentityModel.dll" />
-    <Content Include="bin\Release\Microsoft.Xrm.Client.CodeGeneration.dll" />
-    <Content Include="bin\Release\Microsoft.Xrm.Client.dll" />
-    <Content Include="bin\Release\Microsoft.Xrm.Portal.dll" />
-    <Content Include="bin\Release\Microsoft.Xrm.Portal.Files.dll" />
-    <Content Include="bin\Release\Microsoft.Xrm.Sdk.Deployment.dll" />
-    <Content Include="bin\Release\Microsoft.Xrm.Sdk.dll" />
     <Content Include="bin\coretools\FiltroFramework.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -149,8 +125,6 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="bin\Debug\Crm.Model.dll.config" />
-    <None Include="bin\Release\Crm.Model.dll.config" />
     <None Include="bin\coretools\gera.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

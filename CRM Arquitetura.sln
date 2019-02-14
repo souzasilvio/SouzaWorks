@@ -33,21 +33,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Repositorio", "Crm.Repo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.WebExtension", "Crm.WebExtension\Crm.WebExtension.csproj", "{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{6711DF26-8B5B-429F-B951-226D17558BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Plugins.Tests", "Crm.Plugins.Tests\Crm.Plugins.Tests.csproj", "{52447601-AEA5-44AF-A50B-4D3CE4D756B3}"
+EndProject
 Global
-	GlobalSection(CrmCodeGeneration) = preSolution
-		UseSSL = True
-		UseIFD = False
-		UseOnline = True
-		UseOffice365 = True
-		ServerName = crm2.dynamics.com
-		ServerPort = 
-		HomeRealm = 
-		Domain = 
-		WindowsAuthorization = False
-		Organization = mrv
-		IncludeEntities = account,businessunit,contact,lead,opportunity,systemuser,team,teammembership,transactioncurrency,uom,uomschedule
-		IncludeNonStandard = False
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -84,6 +74,10 @@ Global
 		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52447601-AEA5-44AF-A50B-4D3CE4D756B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52447601-AEA5-44AF-A50B-4D3CE4D756B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52447601-AEA5-44AF-A50B-4D3CE4D756B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52447601-AEA5-44AF-A50B-4D3CE4D756B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,9 +91,24 @@ Global
 		{2453AAE1-B8E6-465F-838D-BBE911CE795B} = {69280BF4-BD5A-4251-AF2B-DB47FDC7D78A}
 		{95161515-1EC6-497E-9728-CA3756DA6A59} = {2998BD7F-C393-4159-9ECC-BDFFB87E26DD}
 		{DC26F209-2715-4F4A-B2FB-AC1AF49132B1} = {E0E59FF0-F75A-4644-B9F8-BF6CCA17161A}
+		{52447601-AEA5-44AF-A50B-4D3CE4D756B3} = {6711DF26-8B5B-429F-B951-226D17558BA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EB21E03-F2C0-4A72-BACC-D6DEDF3C5517}
+	EndGlobalSection
+	GlobalSection(CrmCodeGeneration) = preSolution
+		UseSSL = True
+		UseIFD = False
+		UseOnline = True
+		UseOffice365 = True
+		ServerName = crm2.dynamics.com
+		ServerPort = 
+		HomeRealm = 
+		Domain = 
+		WindowsAuthorization = False
+		Organization = mrv
+		IncludeEntities = account,businessunit,contact,lead,opportunity,systemuser,team,teammembership,transactioncurrency,uom,uomschedule
+		IncludeNonStandard = False
 	EndGlobalSection
 	GlobalSection(CRMSolutionProperties) = preSolution
 		SolutionIsBoundToCRM = True
